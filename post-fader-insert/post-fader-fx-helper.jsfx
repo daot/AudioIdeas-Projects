@@ -16,7 +16,7 @@ about:
    Dependencies:
      - None
 
-slider1:0<-160,24,0.01>Volume
+slider1:0<-160,24,0.01>PostFaderCalculatedVolume
 
 @sample    
 // Apply the volume control to the audio sample  

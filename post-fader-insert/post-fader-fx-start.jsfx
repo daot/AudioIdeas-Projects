@@ -17,10 +17,10 @@ about:
      - None
 
 desc:Post-fader-insert-start
-slider1:0<-160,24,0.01>Volume
-slider2:0<0,1,1>Mute
-slider3:0<0,1,1>Solo
-slider4:0<0,1,1>Solo on other channel
+slider1:0<-160,24,0.01>PostFaderCalculatedVolume
+slider2:0<0,1,1>PostFaderMute
+slider3:0<0,1,1>PostFaderSolo
+slider4:0<0,1,1>PostFaderSoloOnOtherChannel
 
 @sample
 amp = 10^(slider1/20);
