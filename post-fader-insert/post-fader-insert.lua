@@ -1,6 +1,6 @@
 --[[
 @description Post-fader-insert
-@version 1.13
+@version 1.2
 @author Vesa Laasanen
 @changelog
    1.2:
@@ -156,8 +156,8 @@ function CheckAndHandlePluginChanges()
             lastFXCounts[i] = fx_count
             for j = 0, fx_count - 1 do
                 local param_count = reaper.TrackFX_GetNumParams(track, j)
-                for i = 0, param_count - 1 do
-                    local retval, param_name = reaper.TrackFX_GetParamName(track, j, i, "")
+                for k = 0, param_count - 1 do
+                    local retval, param_name = reaper.TrackFX_GetParamName(track, j, k, "")
                     if containsIgnoreCase(param_name, "PostFader") then
                         local volume = reaper.GetMediaTrackInfo_Value(track, "D_VOL")
                         UpdateTrackJSFXVolume(track, i)
@@ -183,8 +183,8 @@ function UpdateTrackJSFXVolume(track, trackIndex)
     local fx_count = reaper.TrackFX_GetCount(track)
     for j = 0, fx_count - 1 do
         local param_count = reaper.TrackFX_GetNumParams(track, j)
-        for i = 0, param_count - 1 do
-            local retval, param_name = reaper.TrackFX_GetParamName(track, j, i, "")
+        for param_index = 0, param_count - 1 do
+            local retval, param_name = reaper.TrackFX_GetParamName(track, j, param_index, "")
             if containsIgnoreCase(param_name, "PostFaderCalculatedVolume") then
                 local retval, fx_name = reaper.TrackFX_GetFXName(track, j, "")
                 local volume = lastVolumes[trackIndex]
@@ -202,7 +202,7 @@ function UpdateTrackJSFXVolume(track, trackIndex)
                 local totalAmplitude = volume * trackVolume * trimVolume
                 totalVolume = 20 * math.log(totalAmplitude, 10)
 
-                reaper.TrackFX_SetParam(track, j, i, totalVolume)
+                reaper.TrackFX_SetParam(track, j, param_index, totalVolume)
             end
         end
     end
@@ -212,14 +212,14 @@ function UpdateTrackJSFXMute(track, trackIndex)
     local fx_count = reaper.TrackFX_GetCount(track)
     for j = 0, fx_count - 1 do
         local param_count = reaper.TrackFX_GetNumParams(track, j)
-        for i = 0, param_count - 1 do
-            local retval, param_name = reaper.TrackFX_GetParamName(track, j, i, "")
+        for param_index = 0, param_count - 1 do
+            local retval, param_name = reaper.TrackFX_GetParamName(track, j, param_index, "")
             if containsIgnoreCase(param_name, "PostFaderMute") then
                 local mute = lastMutes[trackIndex]
                 if not lastMutes[trackIndex] then
                     mute = 0
                 end
-                reaper.TrackFX_SetParam(track, j, i, mute)
+                reaper.TrackFX_SetParam(track, j, param_index, mute)
             end
         end
     end
@@ -235,7 +235,7 @@ function UpdateTrackJSFXSolo(track, trackIndex)
             local retval, param_name = reaper.TrackFX_GetParamName(track, j, solo_index, "")
             if containsIgnoreCase(param_name, "PostFaderSolo") then
                 for solo_other_index = 0, param_count - 1 do
-                    local retval, param_name = reaper.TrackFX_GetParamName(track, j, solo_index, "")
+                    local retval, param_name = reaper.TrackFX_GetParamName(track, j, solo_other_index, "")
                     if containsIgnoreCase(param_name, "PostFaderSoloInOtherChannel") then
                         local solo = lastSolos[trackIndex]
                         if not lastSolos[trackIndex] then
