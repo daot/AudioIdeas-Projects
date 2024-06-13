@@ -1,8 +1,8 @@
 description: Post-fader-insert-start
-version: 1.2
+version: 1.20
 author: Vesa Laasanen
 changelog: 
-1.2:  Added ability to control faders from within containers (toad)
+1.20:  Added ability to control faders from within containers (toad)
 1.10: mute and solo functionality
 1.04: initial version
 about:

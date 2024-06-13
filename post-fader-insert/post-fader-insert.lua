@@ -1,9 +1,9 @@
 --[[
 @description Post-fader-insert
-@version 1.2
+@version 1.20
 @author Vesa Laasanen
 @changelog
-   1.2:
+   1.20:
    Added ability to control faders from within containers (toad)
    1.13:
    Fix bug with finding plugins with pathnames
