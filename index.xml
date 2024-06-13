@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Audioideas Projects" commit="d1f447bcf345dac5279fdf5810b61c93f6ac8783">
+<index version="1" name="Audioideas Projects" commit="23d403ea576cf7b834db0e29f5ac402cd37ad371">
   <category name="Hardware_insert_scripts">
-    <reapack name="generate-hw-insert-scripts-from-presets.lua" type="script"
-      desc="Generate hardware insert scripts from ReaInsert presets">
+    <reapack name="generate-hw-insert-scripts-from-presets.lua" type="script" desc="Generate hardware insert scripts from ReaInsert presets">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -183,7 +182,7 @@ initial version]]></changelog>
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Insert JS: post-fader-fx-start and JS: post-fader-fx-end plugins to a channel. Any plugin between these plugins will emulate post-fader insert. JS: post-fader-fx-start multiplies the signal volume by channel fader value and JS: post-fader-fx-end reverses the volume change.\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Dependencies:\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab None\sa180\par}
-} 
+}
 ]]></description>
       </metadata>
       <version name="1.0" author="Vesa Laasanen" time="2024-02-14T17:06:00Z">
