@@ -127,10 +127,6 @@ initial version]]></changelog>
         <source>
           https://github.com/AudioIdeas/AudioIdeas-Projects/raw/afdc811529b5db45ba79e62e0795ca3439f2c178/post-fader-insert/post-fader-fx-end.jsfx</source>
       </version>
-      <version name="1.2" author="toad" time="2024-06-13T09:39:00Z">
-        <source>
-          https://raw.githubusercontent.com/daot/AudioIdeas-Projects/d8a1e4d7e4035c6fef1886b59cebe466c40e7380/post-fader-insert/post-fader-fx-end.jsfx</source>
-      </version>
     </reapack>
     <reapack name="post-fader-fx-helper.jsfx" type="effect" desc="Post-fader-insert-helper">
       <metadata>
@@ -172,10 +168,6 @@ initial version]]></changelog>
       <version name="1.10" author="Vesa Laasanen" time="2024-02-26T10:02:02Z">
         <source>
           https://github.com/AudioIdeas/AudioIdeas-Projects/raw/afdc811529b5db45ba79e62e0795ca3439f2c178/post-fader-insert/post-fader-fx-helper.jsfx</source>
-      </version>
-      <version name="1.2" author="toad" time="2024-06-13T09:39:00Z">
-        <source>
-          https://raw.githubusercontent.com/daot/AudioIdeas-Projects/d8a1e4d7e4035c6fef1886b59cebe466c40e7380/post-fader-insert/post-fader-fx-helper.jsfx</source>
       </version>
     </reapack>
     <reapack name="post-fader-fx-start.jsfx" type="effect" desc="Post-fader-insert-start">
@@ -223,10 +215,6 @@ initial version]]></changelog>
       <version name="1.10" author="Vesa Laasanen" time="2024-02-26T10:02:02Z">
         <source>
           https://github.com/AudioIdeas/AudioIdeas-Projects/raw/afdc811529b5db45ba79e62e0795ca3439f2c178/post-fader-insert/post-fader-fx-start.jsfx</source>
-      </version>
-      <version name="1.2" author="toad" time="2024-06-13T09:39:00Z">
-        <source>
-          https://raw.githubusercontent.com/daot/AudioIdeas-Projects/d8a1e4d7e4035c6fef1886b59cebe466c40e7380/post-fader-insert/post-fader-fx-start.jsfx</source>
       </version>
     </reapack>
     <reapack name="post-fader-insert.lua" type="script" desc="Post-fader-insert">
@@ -310,22 +298,8 @@ Fix bug with opening a project
 Mute and solo functionality
 1.02:
 initial version]]></changelog>
-      </version>
-      <source main="main">
-        https://github.com/AudioIdeas/AudioIdeas-Projects/raw/d1f447bcf345dac5279fdf5810b61c93f6ac8783/post-fader-insert/post-fader-insert.lua</source>
-      <version name="1.2" author="toad" time="2024-06-13T09:39:00Z">
-        <changelog><![CDATA[1.2:
-    Added ability to control faders from within containers (toad)
-    1.13:
-    Fix bug with finding plugins with pathnames
-    1.11:
-    Fix bug with opening a project
-    1.10:
-    Mute and solo functionality
-    1.02:
-    initial version]]></changelog>
         <source main="main">
-          https://raw.githubusercontent.com/daot/AudioIdeas-Projects/d8a1e4d7e4035c6fef1886b59cebe466c40e7380/post-fader-insert/post-fader-insert.lua</source>
+          https://github.com/AudioIdeas/AudioIdeas-Projects/raw/d1f447bcf345dac5279fdf5810b61c93f6ac8783/post-fader-insert/post-fader-insert.lua</source>
       </version>
     </reapack>
   </category>
