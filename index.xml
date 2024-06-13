@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Audioideas Projects" commit="23d403ea576cf7b834db0e29f5ac402cd37ad371">
+<index version="1" name="Audioideas Projects" commit="a47a9c74d2b406cb73c53f23f1b6013761f6af0d">
   <category name="Hardware_insert_scripts">
     <reapack name="generate-hw-insert-scripts-from-presets.lua" type="script" desc="Generate hardware insert scripts from ReaInsert presets">
       <metadata>
@@ -126,6 +126,9 @@ initial version]]></changelog>
         <source>
           https://github.com/AudioIdeas/AudioIdeas-Projects/raw/afdc811529b5db45ba79e62e0795ca3439f2c178/post-fader-insert/post-fader-fx-end.jsfx</source>
       </version>
+      <version name="1.20" author="Vesa Laasanen" time="2024-06-13T14:54:51Z">
+        <source>https://github.com/daot/AudioIdeas-Projects/raw/a47a9c74d2b406cb73c53f23f1b6013761f6af0d/post-fader-insert/post-fader-fx-end.jsfx</source>
+      </version>
     </reapack>
     <reapack name="post-fader-fx-helper.jsfx" type="effect" desc="Post-fader-insert-helper">
       <metadata>
@@ -167,6 +170,9 @@ initial version]]></changelog>
       <version name="1.10" author="Vesa Laasanen" time="2024-02-26T10:02:02Z">
         <source>
           https://github.com/AudioIdeas/AudioIdeas-Projects/raw/afdc811529b5db45ba79e62e0795ca3439f2c178/post-fader-insert/post-fader-fx-helper.jsfx</source>
+      </version>
+      <version name="1.20" author="Vesa Laasanen" time="2024-06-13T14:54:51Z">
+        <source>https://github.com/daot/AudioIdeas-Projects/raw/a47a9c74d2b406cb73c53f23f1b6013761f6af0d/post-fader-insert/post-fader-fx-helper.jsfx</source>
       </version>
     </reapack>
     <reapack name="post-fader-fx-start.jsfx" type="effect" desc="Post-fader-insert-start">
@@ -214,6 +220,9 @@ initial version]]></changelog>
       <version name="1.10" author="Vesa Laasanen" time="2024-02-26T10:02:02Z">
         <source>
           https://github.com/AudioIdeas/AudioIdeas-Projects/raw/afdc811529b5db45ba79e62e0795ca3439f2c178/post-fader-insert/post-fader-fx-start.jsfx</source>
+      </version>
+      <version name="1.20" author="Vesa Laasanen" time="2024-06-13T14:54:51Z">
+        <source>https://github.com/daot/AudioIdeas-Projects/raw/a47a9c74d2b406cb73c53f23f1b6013761f6af0d/post-fader-insert/post-fader-fx-start.jsfx</source>
       </version>
     </reapack>
     <reapack name="post-fader-insert.lua" type="script" desc="Post-fader-insert">
@@ -300,6 +309,19 @@ initial version]]></changelog>
         <source main="main">
           https://github.com/AudioIdeas/AudioIdeas-Projects/raw/d1f447bcf345dac5279fdf5810b61c93f6ac8783/post-fader-insert/post-fader-insert.lua</source>
       </version>
+      <version name="1.20" author="Vesa Laasanen" time="2024-06-13T14:54:51Z">
+        <changelog><![CDATA[1.20:
+Added ability to control faders from within containers (toad)
+1.13:
+Fix bug with finding plugins with pathnames
+1.11:
+Fix bug with opening a project
+1.10:
+Mute and solo functionality
+1.02:
+initial version]]></changelog>
+        <source main="main">https://github.com/daot/AudioIdeas-Projects/raw/a47a9c74d2b406cb73c53f23f1b6013761f6af0d/post-fader-insert/post-fader-insert.lua</source>
+      </version>
     </reapack>
   </category>
   <metadata>
@@ -312,7 +334,7 @@ initial version]]></changelog>
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Installation\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 For easy installation and updates, integrate this repository with the ReaPack REAPER extension:\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Open REAPER and navigate to {\f1 Extensions} > {\f1 ReaPack} > {\f1 Import a repository}.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Copy and paste the following URL: {\f1 https://github.com/AudioIdeas/AudioIdeas-Projects/raw/master/index.xml}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Copy and paste the following URL: {\f1 https://github.com/daot/AudioIdeas-Projects/raw/master/index.xml}\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Contributing\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Feedback and contributions are welcome. If you'd like to contribute or suggest changes, please make a pull request or open an issue.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Contact & More\par}
