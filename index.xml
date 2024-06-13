@@ -183,7 +183,7 @@ initial version]]></changelog>
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Insert JS: post-fader-fx-start and JS: post-fader-fx-end plugins to a channel. Any plugin between these plugins will emulate post-fader insert. JS: post-fader-fx-start multiplies the signal volume by channel fader value and JS: post-fader-fx-end reverses the volume change.\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Dependencies:\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab None\sa180\par}
-}
+} 
 ]]></description>
       </metadata>
       <version name="1.0" author="Vesa Laasanen" time="2024-02-14T17:06:00Z">
