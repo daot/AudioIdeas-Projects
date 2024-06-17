@@ -1,6 +1,6 @@
 --[[
 @description Post-fader-insert
-@version 1.20
+@version 1.21
 @author Vesa Laasanen
 @changelog
    1.21:

@@ -1,5 +1,5 @@
 description: Post-fader-insert-start
-version: 1.20
+version: 1.21
 author: Vesa Laasanen
 changelog: 
 1.21: If end fader is wrapped in a container, then move the container to the end of the plugin list every time a new plugin is added (toad)
