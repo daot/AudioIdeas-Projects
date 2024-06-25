@@ -1,10 +1,8 @@
 --[[
 @description Post-fader-insert
-@version 1.21
+@version 1.20
 @author Vesa Laasanen
 @changelog
-   1.21:
-   If end fader is wrapped in a container, then move the container to the end of the plugin list every time a new plugin is added (toad)
    1.20:
    Added ability to control faders from within containers (toad)
    1.13:
@@ -161,10 +159,6 @@ function CheckAndHandlePluginChanges()
                 for k = 0, param_count - 1 do
                     local retval, param_name = reaper.TrackFX_GetParamName(track, j, k, "")
                     if containsIgnoreCase(param_name, "PostFader") then
-                        local retval, buf = reaper.TrackFX_GetNamedConfigParm(track, j, "fx_type")
-                        if containsIgnoreCase(buf, "Container") and not (j == fx_count - 1) then
-                          reaper.TrackFX_CopyToTrack(track, j, track, fx_count, 1)
-                        end
                         local volume = reaper.GetMediaTrackInfo_Value(track, "D_VOL")
                         UpdateTrackJSFXVolume(track, i)
                         local mute = reaper.GetMediaTrackInfo_Value(track, "B_MUTE")
